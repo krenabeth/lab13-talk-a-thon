@@ -5,11 +5,14 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <title>Talk-a-thon</title>
   </head>
-  <body ng-app>
+  <body ng-app='talk' ng-controller='talkCtrl'>
 
     <h1>Talk-a-thon</h1>
     <div id="photo"></div>
     <div id="chatter">
+
+      {{chatter}}
+
       <button id="words" ng-click="addWords()">Words</button>
       <button id="words_dec" ng-click="addWordsDec()">Words with Decoration</button>
       <button id="phrases" ng-click="addPhrases()">Phrases</button>
