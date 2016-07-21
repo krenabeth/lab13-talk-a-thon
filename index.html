@@ -11,11 +11,11 @@
     <div id="photo"></div>
     <div id="chatter">
     <!-- use ng-repeat to loop through our chatterArray and print to div-->
-    <!-- currently, scope is not properly bound or defined -->
       <ul>
-        <li ng-repeat='chatter in chatterArray'>{{chatter}}</li>
+        <li ng-repeat='wordObj in chatterArray' class="ng-class : {{wordObj.decoration}}">{{wordObj.name}}</li>
       </ul>
 
+      <!-- <p>This is a paragraph I hard coded: {{wordObj.name}}</p> -->
 
       <button id="words" ng-click="addWords()">Words</button>
       <button id="words_dec" ng-click="addWordsDec()">Words with Decoration</button>
