@@ -10,6 +10,7 @@ app.controller('talkCtrl', function($scope){
       $scope.phrase = ['he hit me', 'are we there yet?', "where's my tablet?!", "i'm hungry"];
       $scope.phrase_dec = ['red', 'orange', 'yellow', 'green', 'blue'];
 
+      var chatterArray = [];
 
     // create scope function to push words to div
 
@@ -26,7 +27,10 @@ app.controller('talkCtrl', function($scope){
         getRandomInt(0, arrLength);
         console.log('random index is: ' + randomIndex);
         // append that arrayWords indexOf[thatVariable] to the div
-        $scope.chatter = $scope.words[randomIndex];
+        chatterArray.push($scope.words[randomIndex]);
+        console.log(chatterArray);
+        // need to properly define scope.chatter so it shows up on html
+        // $scope.chatter = 
       };
 
 

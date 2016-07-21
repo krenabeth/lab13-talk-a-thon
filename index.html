@@ -10,16 +10,18 @@
     <h1>Talk-a-thon</h1>
     <div id="photo"></div>
     <div id="chatter">
+    <!-- use ng-repeat to loop through our chatterArray and print to div-->
+    <!-- currently, scope is not properly bound or defined -->
+      <ul>
+        <li ng-repeat='chatter in chatterArray'>{{chatter}}</li>
+      </ul>
 
-      {{chatter}}
 
       <button id="words" ng-click="addWords()">Words</button>
       <button id="words_dec" ng-click="addWordsDec()">Words with Decoration</button>
       <button id="phrases" ng-click="addPhrases()">Phrases</button>
       <button id="phrases_dec" ng-click="addPhrasesDec()">Phrases with Decoration</button>
     </div>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" type="text/javascript"></script>
     <script src="scripts.js" type="text/javascript"></script>
