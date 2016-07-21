@@ -1,0 +1,24 @@
+{
+  "name": "lab13-talk-a-thon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krenabeth/lab13-talk-a-thon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krenabeth/lab13-talk-a-thon/issues"
+  },
+  "homepage": "https://github.com/krenabeth/lab13-talk-a-thon#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {}
+}
