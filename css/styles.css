@@ -1,15 +1,53 @@
 .red {
-  font-family: Helvetica, sans-serif;
-  color: red; }
+  color: red;
+  font-size: 115%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Walter Turncoat', cursive; }
 
 .orange {
-  color: orange; }
+  color: orange;
+  font-size: 125%;
+  text-decoration: underline; }
 
 .yellow {
-  color: yellow; }
+  color: yellow;
+  background-color: black;
+  height: 75px;
+  margin: 15px auto;
+  padding: 2px;
+  transform: rotate(-8deg);
+  width: 100px; }
 
 .green {
-  color: green; }
+  color: green;
+  font-size: 105%;
+  text-decoration: wavy underline;
+  font-family: 'McLaren', Arial; }
 
 .blue {
-  color: blue; }
+  color: blue;
+  font-style: italic; }
+
+h1 {
+  color: orange;
+  text-shadow: #CCC 1px 0 10px;
+  font-size: 4em; }
+
+button {
+  background-color: orange;
+  font-style: bold;
+  border-radius: 15px; }
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 0.5em; }
+
+#chatter {
+  margin: auto;
+  padding: 2px;
+  background-color: #bcd4d4; }
+
+#photo {
+  float: left; }
