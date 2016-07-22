@@ -1,3 +1,7 @@
+// this is a secret message for Adam, Aisha, and Jeseekia. ... um, the eagle has landed?
+
+@import 'classes';
+
 h1 {
 
 }
@@ -6,34 +10,16 @@ button {
 
 }
 
+li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 0.5em;
+}
+
 #chatter {
 
 }
 
 #photo {
-
-}
-
-
-// classes for our words desc array
-// karen will populate and split into separate SCSS file, use include
-
-.red {
-
-}
-
-.orange {
-
-}
-
-.yellow {
-
-}
-
-.green {
-
-}
-
-.blue {
 
 }
