@@ -20,7 +20,7 @@ header {
 }
 
 h1 {
- color: orange;
+ color: #ee9d08;
  text-shadow: #CCC 1px 0 10px;
  font-size: 4em;
  margin-bottom: 0.5em;
@@ -37,6 +37,7 @@ h2 {
 button {
 	background-color: orange;
 	font-style: bold;
+  font-size: .8em;
   margin-bottom: 1em;
 	@include border-rad(15px);
 }
@@ -49,6 +50,8 @@ li {
   display: inline-block;
   list-style: none;
   margin-right: 0.5em;
+  font-family: 'McLaren', Arial;
+  color: #0754b6;
 }
 
 #button-array {

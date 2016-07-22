@@ -35,28 +35,42 @@ footer, header, hgroup, menu, nav, section {
   font-family: 'Walter Turncoat', cursive; }
 
 .orange {
-  color: orange;
+  color: #ee9d08;
   font-size: 125%;
   text-decoration: underline; }
 
 .yellow {
   color: yellow;
-  background-color: black;
-  height: 75px;
-  margin: 15px auto;
+  background-color: #0754b6;
+  height: 8%;
+  margin: auto;
   padding: 2px;
   transform: rotate(-8deg);
-  width: 100px; }
+  width: 10%;
+  font-family: 'Walter Turncoat'; }
 
 .green {
   color: green;
   font-size: 105%;
   text-decoration: wavy underline;
-  font-family: 'McLaren', Arial; }
+  text-shadow: #CCC 1px 0 10px; }
 
 .blue {
-  color: blue;
-  font-style: italic; }
+  font-size: 110%;
+  margin-top: -15px;
+  height: 25px;
+  width: 150px;
+  color: #0754b6;
+  font-style: italic;
+  -webkit-animation: bounce .1s infinite; }
+
+@-webkit-keyframes blue {
+  from {
+    margin-top: 25px;
+    margin-bottom: 50px; }
+  to {
+    margin-top: 100px !important;
+    margin-bottom: 25px; } }
 
 body {
   background-color: #bcd4d4; }
@@ -67,7 +81,7 @@ header {
   padding: 2em; }
 
 h1 {
-  color: orange;
+  color: #ee9d08;
   text-shadow: #CCC 1px 0 10px;
   font-size: 4em;
   margin-bottom: 0.5em;
@@ -82,6 +96,7 @@ h2 {
 button {
   background-color: orange;
   font-style: bold;
+  font-size: .8em;
   margin-bottom: 1em;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -93,7 +108,9 @@ img {
 li {
   display: inline-block;
   list-style: none;
-  margin-right: 0.5em; }
+  margin-right: 0.5em;
+  font-family: 'McLaren', Arial;
+  color: #0754b6; }
 
 #button-array {
   clear: both; }
