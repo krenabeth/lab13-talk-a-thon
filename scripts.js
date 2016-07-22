@@ -5,9 +5,9 @@ var app = angular.module('talk', []);
 app.controller('talkCtrl', function($scope){
   // controller logic
     // create 4 arrays (word, word_dec, phrase, phrase_dec)
-      $scope.words = ['Mom!', 'Maaahhhhuuuuummm', 'dinosaurs', 'monster trucks', 'chicken nuggets'];
+      $scope.words = ['Mom!', 'Maaahhhhuuuuummm', 'dinosaurs', 'monster trucks', 'chicken nuggets', 'Nerf', 'fruit loops'];
       $scope.words_dec = ['red', 'orange', 'yellow', 'green', 'blue']; // these will become SCSS classes
-      $scope.phrase = ['he hit me', 'are we there yet?', "where's my tablet?!", "i'm hungry"];
+      $scope.phrase = ['he hit me', 'are we there yet?', "where's my tablet?!", "I'm hungry", "You're the meanest mom on earth.", "I'll call 9-1-1 if you don't make me waffles for dinner.", "You owe me 95 dollars.", "I'm climbing into the cabinet"];
       // just use words_dec to apply classes to phrase
       $scope.chatterArray = [];
 
@@ -30,7 +30,23 @@ app.controller('talkCtrl', function($scope){
       }
 
     // create scope function to push words_dec to div
-
+   // create scope function to push phrases to div
+    $scope.addPhrases = function(){
+        // take a word from the scope.words array
+        var wordObj = {};
+        wordObj.name = $scope.phrase[Math.floor(Math.random() * $scope.phrase.length)];
+        wordObj.decoration = '';
+        $scope.chatterArray.push(wordObj);
+        console.log(wordObj);
+      };
+    // create scope function to push phrases to div
+    $scope.addPhrasesDec = function (){
+        var wordObj = {};
+        wordObj.name = $scope.phrase[Math.floor(Math.random() * $scope.phrase.length)];
+        wordObj.decoration = $scope.words_dec[Math.floor(Math.random() * $scope.words_dec.length)];
+        $scope.chatterArray.push(wordObj);
+        console.log(wordObj);
+      }
     // create scope function to push phrases to div
 
     // create scope function to push phrases to div
