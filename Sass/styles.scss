@@ -1,16 +1,48 @@
+// hello Adam, Aisha, and Jeseekia! the secret word is 'bacon.' shhhhhhhhhhhhh.
 
+@import 'reset';
 @import 'classes';
+
+@mixin border-rad($pixels) {
+  -moz-border-radius: $pixels;
+  -webkit-border-radius: $pixels;
+  border-radius: $pixels;
+}
+
+body {
+  background-color: #bcd4d4;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  padding: 2em;
+}
 
 h1 {
  color: orange;
- text-shadow: #CCC 1px 0 10px; 
+ text-shadow: #CCC 1px 0 10px;
  font-size: 4em;
+ margin-bottom: 0.5em;
+ margin-right: 0.2em;
+ display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 button {
 	background-color: orange;
 	font-style: bold;
-	border-radius: 15px;
+  margin-bottom: 1em;
+	@include border-rad(15px);
+}
+
+img {
+  float: left;
 }
 
 li {
@@ -19,13 +51,22 @@ li {
   margin-right: 0.5em;
 }
 
+#button-array {
+  clear: both;
+}
+
+#main {
+  background-color: #bcd4d4;
+  min-height: 400px;
+}
+
 #chatter {
 	margin: auto;
 	padding: 2px;
-	background-color: #bcd4d4;
+  position: relative;
 }
 
 #photo {
+  padding-top: 2em;
 	float: left;
 }
-

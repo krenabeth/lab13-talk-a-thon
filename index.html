@@ -8,27 +8,27 @@
     <title>Talk-a-thon</title>
   </head>
   <body ng-app='talk' ng-controller='talkCtrl'>
-
-    <h1>Talk-a-thon</h1>
-    <div id="photo"></div>
-    <div id="chatter">
-    <!-- use ng-repeat to loop through our chatterArray and print to div-->
-
-      <ul>
-        <li ng-repeat='wordObj in chatterArray' class="ng-class : {{wordObj.decoration}}">{{wordObj.name}}</li>
-      </ul>
-
-      <!-- <p>This is a paragraph I hard coded: {{wordObj.name}}</p> -->
-
-      <button id="words" ng-click="addWords()">Words</button>
-      <button id="words_dec" ng-click="addWordsDec()">Words with Decoration</button>
-      <button id="phrases" ng-click="addPhrases()">Phrases</button>
-      <button id="phrases_dec" ng-click="addPhrasesDec()">Phrases with Decoration</button>
-
-       <img src="http://www.clipartkid.com/images/18/11-crazy-hair-clip-art-free-cliparts-that-you-can-download-to-you-qvKUaj-clipart.png" alt="cartoon of boy's head with crazy blonde hair and blue eyes" width="250"/>
-       
+    <header>
+      <h1>Talk-a-thon</h1>
+      <h2>A Six Year-Old Speech Simulator</h2>
+      <div id="button-array">
+        <button id="words" ng-click="addWords()">Words</button>
+        <button id="words_dec" ng-click="addWordsDec()">Words with Decoration</button>
+        <button id="phrases" ng-click="addPhrases()">Phrases</button>
+        <button id="phrases_dec" ng-click="addPhrasesDec()">Phrases with Decoration</button>
+      </div>
+    </header>
+    <div id="main">
+      <div id="photo">
+        <img src="http://www.clipartkid.com/images/18/11-crazy-hair-clip-art-free-cliparts-that-you-can-download-to-you-qvKUaj-clipart.png" alt="cartoon of boy's head with crazy blonde hair and blue eyes" width="250"/>
+      </div>
+      <div id="chatter">
+      <!-- use ng-repeat to loop through our chatterArray and print to div-->
+        <ul>
+          <li ng-repeat='wordObj in chatterArray' class="ng-class : {{wordObj.decoration}}">{{wordObj.name}}</li>
+        </ul>
+      </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" type="text/javascript"></script>
     <script src="scripts.js" type="text/javascript"></script>
   </body>
